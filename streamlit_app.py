@@ -26,7 +26,7 @@ def get_gdp_data():
     raw_gdp_df = pd.read_csv(DATA_FILENAME)
 
     MIN_YEAR = 1960
-    MAX_YEAR = 2022
+    MAX_YEAR = 2020
 
     # The data above has columns like:
     # - Country Name
@@ -79,7 +79,7 @@ min_value = gdp_df['Year'].min()
 max_value = gdp_df['Year'].max()
 
 from_year, to_year = st.slider(
-    'Which years are you interested in?',
+    'Which years are you so interested in?',
     min_value=min_value,
     max_value=max_value,
     value=[min_value, max_value])
